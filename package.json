@@ -2,7 +2,7 @@
   "name": "timestable",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://jayblack388.github.io/timestable",
+  "homepage": "https://jayblack388.github.io/timestable",
   "dependencies": {
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
@@ -12,6 +12,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.1.0"
   }
 }
